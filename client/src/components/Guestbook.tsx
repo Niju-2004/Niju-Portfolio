@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MessageSquare, Send, Sparkles, User, Heart, ThumbsUp } from 'lucide-react';
+import { MessageSquare, Send, Sparkles } from 'lucide-react';
 import { GuestbookEntry } from '../types';
 import { api } from '../services/api';
 import { STATIC_GUESTBOOK } from '../data/staticFallback';

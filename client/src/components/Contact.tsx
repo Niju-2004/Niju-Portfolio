@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle2, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { api } from '../services/api';
 import { STATIC_PROFILE } from '../data/staticFallback';

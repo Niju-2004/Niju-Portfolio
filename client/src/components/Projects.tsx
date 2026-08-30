@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FolderGit2, ExternalLink, Sparkles, Layers, ArrowUpRight } from 'lucide-react';
+import { FolderGit2, ExternalLink, Sparkles, Layers } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import { Project } from '../types';
 import { api } from '../services/api';

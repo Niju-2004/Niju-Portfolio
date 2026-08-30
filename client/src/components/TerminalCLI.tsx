@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Terminal as TerminalIcon, X, Minimize2, Maximize2, CornerDownLeft, Sparkles } from 'lucide-react';
+import { Terminal as TerminalIcon, X, CornerDownLeft } from 'lucide-react';
 import { api } from '../services/api';
 import { STATIC_PROFILE, STATIC_PROJECTS, STATIC_SKILLS, STATIC_EXPERIENCE } from '../data/staticFallback';
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Briefcase, Calendar, MapPin, CheckCircle2, Building, Sparkles } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, CheckCircle2, Building } from 'lucide-react';
 import { Experience as ExperienceType } from '../types';
 import { api } from '../services/api';
 import { STATIC_EXPERIENCE } from '../data/staticFallback';
@@ -25,7 +25,7 @@ export const Experience: React.FC = () => {
         </div>
 
         <div className="mt-10 relative pl-4 sm:pl-8 border-l border-white/10 space-y-10">
-          {experiences.map((exp, idx) => (
+          {experiences.map((exp) => (
             <div key={exp.id} className="relative group">
               {/* Timeline Indicator Dot */}
               <div className="absolute -left-[21px] sm:-left-[37px] top-1.5 w-4 h-4 rounded-full bg-brand-rose border-4 border-[#08080d] group-hover:scale-125 transition-transform shadow-md shadow-brand-rose/50" />

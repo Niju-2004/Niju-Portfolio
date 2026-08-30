@@ -3,12 +3,10 @@ import {
   Mail, 
   Terminal, 
   ArrowRight, 
-  Sparkles, 
   Code2, 
   Bot, 
   Server, 
-  Database,
-  Download
+  Database
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { STATIC_PROFILE } from '../data/staticFallback';

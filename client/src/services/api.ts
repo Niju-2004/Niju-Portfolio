@@ -7,7 +7,7 @@ import {
   STATIC_GUESTBOOK
 } from '../data/staticFallback';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
+const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || '/api';
 
 /**
  * Service to communicate with Express REST API

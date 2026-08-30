@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUp, Activity, Sparkles, Heart } from 'lucide-react';
+import { ArrowUp, Sparkles } from 'lucide-react';
 import { api } from '../services/api';
 import { HealthStatus } from '../types';
 

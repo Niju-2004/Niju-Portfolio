@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Award, ShieldCheck, CheckCircle, ExternalLink, Sparkles } from 'lucide-react';
+import { Award, ShieldCheck } from 'lucide-react';
 import { Certification } from '../types';
 import { api } from '../services/api';
 import { STATIC_CERTIFICATIONS } from '../data/staticFallback';
