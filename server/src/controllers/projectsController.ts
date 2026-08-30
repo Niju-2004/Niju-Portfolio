@@ -39,7 +39,7 @@ export async function getProjects(req: Request, res: Response) {
 
 export async function getProjectBySlug(req: Request, res: Response) {
   try {
-    const { slug } = req.params;
+    const slug = String(req.params.slug);
     let project = null;
     try {
       project = await prisma.project.findUnique({ where: { slug } });
