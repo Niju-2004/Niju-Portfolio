@@ -1,0 +1,35 @@
+# Visual Studio & IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# Node modules & logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variable secrets
+.env
+.env.local
+.env.production
+.env.development
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+

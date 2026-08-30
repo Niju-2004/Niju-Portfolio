@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#07090e] text-slate-100 font-sans;
+  }
+}
+
+/* Spider-Man Glassmorphism */
+.glass-panel {
+  background: rgba(13, 17, 29, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-panel-hover:hover {
+  background: rgba(19, 24, 41, 0.9);
+  border-color: rgba(230, 36, 41, 0.4);
+  box-shadow: 0 12px 30px -10px rgba(230, 36, 41, 0.3), 0 4px 20px -5px rgba(0, 102, 204, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Spider-Man Glowing text gradients */
+.gradient-text {
+  background: linear-gradient(135deg, #ff2a32 0%, #e62429 40%, #0ea5e9 80%, #0066cc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-rose-violet {
+  background: linear-gradient(135deg, #e62429 0%, #0066cc 100%);
+}
+
+.gradient-spider {
+  background: linear-gradient(135deg, #e62429 0%, #bd0f14 50%, #0066cc 100%);
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(230, 36, 41, 0.4), rgba(0, 102, 204, 0.4));
+  padding: 1px;
+}
+
+/* Cyber Web Grid Pattern */
+.bg-grid-pattern {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 102, 204, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(230, 36, 41, 0.05) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar - Spider-Red */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c243d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e62429;
+}
+

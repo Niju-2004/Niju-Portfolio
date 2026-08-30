@@ -1,0 +1,77 @@
+// Prisma Schema for Niju M Portfolio
+// Equivalent to Entity Framework Core DbContext and Model Entities
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id              Int      @id @default(autoincrement())
+  title           String
+  slug            String   @unique
+  subtitle        String
+  description     String
+  category        String   // "fullstack", "enterprise", "ai", "mobile", "tools"
+  tags            String[] // ["ASP.NET Core", "Angular", "MySQL"]
+  githubUrl       String?
+  liveUrl         String?
+  featured        Boolean  @default(false)
+  displayOrder    Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Experience {
+  id              Int      @id @default(autoincrement())
+  role            String
+  company         String
+  location        String
+  duration        String
+  current         Boolean  @default(false)
+  responsibilities String[]
+  techStack       String[]
+  displayOrder    Int      @default(0)
+  createdAt       DateTime @default(now())
+}
+
+model Skill {
+  id              Int      @id @default(autoincrement())
+  category        String   // "Backend", "Frontend", "Databases", "Languages", "Tools", "AI Technologies"
+  name            String
+  level           Int      @default(85) // 1-100%
+  featured        Boolean  @default(true)
+  displayOrder    Int      @default(0)
+}
+
+model Certification {
+  id              Int      @id @default(autoincrement())
+  name            String
+  issuer          String
+  issueDate       String?
+  credentialUrl   String?
+  displayOrder    Int      @default(0)
+}
+
+model GuestbookEntry {
+  id              Int      @id @default(autoincrement())
+  name            String
+  message         String
+  badge           String   @default("Visitor") // "Recruiter", "Engineer", "Visitor", "Colleague"
+  createdAt       DateTime @default(now())
+}
+
+model ContactMessage {
+  id              Int      @id @default(autoincrement())
+  name            String
+  email           String
+  subject         String?
+  message         String
+  createdAt       DateTime @default(now())
+  read            Boolean  @default(false)
+}
+
