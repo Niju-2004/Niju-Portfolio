@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
               GitHub
             </a>
             <span>•</span>
-            <a href="https://www.linkedin.com/in/m-niju/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+            <a href="https://www.linkedin.com/in/niju-mm" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
               LinkedIn
             </a>
           </div>
