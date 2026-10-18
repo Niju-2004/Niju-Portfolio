@@ -16,7 +16,17 @@ async function main() {
   for (const project of PROJECTS_DATA) {
     await prisma.project.upsert({
       where: { slug: project.slug },
-      update: {},
+      update: {
+        title: project.title,
+        subtitle: project.subtitle,
+        description: project.description,
+        category: project.category,
+        tags: project.tags,
+        githubUrl: project.githubUrl,
+        liveUrl: project.liveUrl,
+        featured: project.featured,
+        displayOrder: project.displayOrder
+      },
       create: {
         title: project.title,
         slug: project.slug,

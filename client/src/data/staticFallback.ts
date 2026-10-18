@@ -34,6 +34,19 @@ export const STATIC_PROJECTS: Project[] = [
   },
   {
     id: 2,
+    title: "EthnoVet Chat — Multilingual Veterinary AI",
+    slug: "rag-vector-db-vet-ai",
+    subtitle: "Multilingual AI assistant powered by Retrieval-Augmented Generation & FAISS",
+    description: "Built a multilingual veterinary chatbot supporting English and Tamil using RAG and FAISS vector database search for accurate context retrieval and natural conversations.",
+    category: "ai",
+    tags: ["Python", "RAG", "FAISS", "Vector DB", "LLMs", "LangChain"],
+    githubUrl: "https://github.com/Niju-2004/Rag-Vector-DB",
+    liveUrl: "https://ethnovet.vercel.app",
+    featured: true,
+    displayOrder: 2
+  },
+  {
+    id: 3,
     title: "Daily Bytes — Enterprise News Platform",
     slug: "daily-bytes-news-platform",
     subtitle: "Full-Stack enterprise news portal with layered architecture and MySQL storage",
@@ -43,10 +56,10 @@ export const STATIC_PROJECTS: Project[] = [
     githubUrl: "https://github.com/Niju-2004",
     liveUrl: null,
     featured: true,
-    displayOrder: 2
+    displayOrder: 3
   },
   {
-    id: 3,
+    id: 4,
     title: "AlconVision Web Application Migration",
     slug: "alconvision-migration",
     subtitle: "Legacy .NET Framework to ASP.NET Core modern architecture migration",
@@ -54,19 +67,6 @@ export const STATIC_PROJECTS: Project[] = [
     category: "enterprise",
     tags: ["ASP.NET Core", "C#", "Application Modernization", "EF Core", "Clean Architecture"],
     githubUrl: "https://github.com/Niju-2004",
-    liveUrl: null,
-    featured: true,
-    displayOrder: 3
-  },
-  {
-    id: 4,
-    title: "Rag-Vector-DB (Multilingual Veterinary AI)",
-    slug: "rag-vector-db-vet-ai",
-    subtitle: "Multilingual AI assistant powered by Retrieval-Augmented Generation & FAISS",
-    description: "Built a multilingual veterinary chatbot supporting English and Tamil using RAG and FAISS vector database search for accurate context retrieval and natural conversations.",
-    category: "ai",
-    tags: ["Python", "RAG", "FAISS", "Vector DB", "LLMs", "LangChain"],
-    githubUrl: "https://github.com/Niju-2004/Rag-Vector-DB",
     liveUrl: null,
     featured: true,
     displayOrder: 4
