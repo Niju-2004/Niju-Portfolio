@@ -28,8 +28,8 @@
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--primary);
       background-color: #f1f5f9;
-      line-height: 1.45;
-      font-size: 11.8px;
+      line-height: 1.38;
+      font-size: 11.2px;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -40,7 +40,7 @@
       z-index: 100;
       background: #0f172a;
       color: #fff;
-      padding: 12px 24px;
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -48,65 +48,59 @@
     }
 
     .no-print-bar h1 {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       color: #f8fafc;
     }
 
     .no-print-bar .sub {
-      font-size: 12px;
+      font-size: 11.5px;
       color: #94a3b8;
     }
 
     .print-btn {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: linear-gradient(135deg, #e11d48, #be123c);
       color: white;
       border: none;
-      padding: 8px 18px;
+      padding: 7px 16px;
       border-radius: 6px;
       font-weight: 600;
-      font-size: 13px;
+      font-size: 12px;
       cursor: pointer;
-      box-shadow: 0 2px 8px rgba(225, 29, 72, 0.35);
-      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(225, 29, 72, 0.35);
     }
 
     .print-btn:hover {
       background: linear-gradient(135deg, #f43f5e, #e11d48);
-      transform: translateY(-1px);
     }
 
     .print-btn svg {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       fill: none;
       stroke: currentColor;
       stroke-width: 2;
     }
 
-    /* Resume Sheet (Filled A4 1-Page Layout) */
+    /* Resume Sheet (Calibrated for strict 1-page fit on Phone Letter & Laptop A4) */
     .resume-wrapper {
       width: 210mm;
       max-width: 210mm;
-      min-height: 297mm;
-      margin: 18px auto;
+      margin: 16px auto;
       background: #ffffff;
-      padding: 11mm 14mm 10mm 14mm;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      padding: 8mm 12mm 6mm 12mm;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     /* Header */
     header {
-      border-bottom: 2.5px solid var(--accent);
-      padding-bottom: 10px;
-      margin-bottom: 11px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 7px;
+      margin-bottom: 7px;
     }
 
     .header-main {
@@ -116,7 +110,7 @@
     }
 
     .candidate-name {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 800;
       letter-spacing: -0.5px;
       color: #0f172a;
@@ -124,20 +118,19 @@
     }
 
     .candidate-title {
-      font-size: 13.5px;
+      font-size: 12.5px;
       font-weight: 700;
       color: var(--accent);
-      margin-top: 4px;
-      letter-spacing: 0.2px;
+      margin-top: 2px;
     }
 
     .contact-row {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 5px 14px;
-      margin-top: 8px;
-      font-size: 11.2px;
+      gap: 4px 10px;
+      margin-top: 5px;
+      font-size: 10.6px;
       color: var(--secondary);
     }
 
@@ -158,23 +151,23 @@
 
     /* Section Headers */
     .section-title {
-      font-size: 12px;
+      font-size: 11.2px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.8px;
       color: var(--primary);
       display: flex;
       align-items: center;
-      gap: 6px;
-      margin-bottom: 7px;
-      border-bottom: 1.5px solid var(--border);
-      padding-bottom: 3px;
+      gap: 5px;
+      margin-bottom: 5px;
+      border-bottom: 1.2px solid var(--border);
+      padding-bottom: 2px;
     }
 
     .section-title::before {
       content: "";
-      width: 4px;
-      height: 12px;
+      width: 3.5px;
+      height: 11px;
       background: var(--accent);
       border-radius: 2px;
     }
@@ -182,14 +175,14 @@
     /* Summary */
     .summary-text {
       color: var(--secondary);
-      font-size: 11.4px;
-      line-height: 1.48;
+      font-size: 10.8px;
+      line-height: 1.38;
       text-align: justify;
     }
 
     /* Experience & Projects */
     .entry {
-      margin-bottom: 9px;
+      margin-bottom: 6px;
     }
 
     .entry:last-child {
@@ -200,12 +193,12 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 2.5px;
+      margin-bottom: 1.5px;
     }
 
     .entry-role {
       font-weight: 700;
-      font-size: 12.8px;
+      font-size: 12px;
       color: var(--primary);
     }
 
@@ -215,7 +208,7 @@
     }
 
     .entry-date {
-      font-size: 10.8px;
+      font-size: 10.2px;
       font-weight: 600;
       color: var(--text-muted);
       font-family: 'JetBrains Mono', monospace;
@@ -223,14 +216,14 @@
 
     .bullet-list {
       list-style-type: disc;
-      padding-left: 17px;
+      padding-left: 15px;
       color: var(--secondary);
-      font-size: 11.3px;
-      line-height: 1.44;
+      font-size: 10.7px;
+      line-height: 1.36;
     }
 
     .bullet-list li {
-      margin-bottom: 2.5px;
+      margin-bottom: 2px;
     }
 
     .bullet-list li strong {
@@ -241,28 +234,28 @@
     .pill-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
-      margin-top: 4px;
+      gap: 3px;
+      margin-top: 2.5px;
     }
 
     .tech-pill {
-      font-size: 9.5px;
+      font-size: 9px;
       font-family: 'JetBrains Mono', monospace;
       background: var(--bg-pill);
       color: var(--secondary);
-      padding: 1px 6px;
-      border-radius: 4px;
+      padding: 0.5px 5px;
+      border-radius: 3px;
       border: 1px solid #cbd5e1;
-      line-height: 1.3;
+      line-height: 1.25;
     }
 
     /* Links */
     .proj-links a {
-      font-size: 11px;
+      font-size: 10.2px;
       font-weight: 700;
       color: var(--link);
       text-decoration: none;
-      margin-left: 8px;
+      margin-left: 6px;
     }
 
     .proj-links a:hover {
@@ -273,45 +266,45 @@
     .skills-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 11.2px;
+      font-size: 10.6px;
     }
 
     .skills-table td {
-      padding: 2.5px 0;
+      padding: 1.8px 0;
       vertical-align: top;
     }
 
     .skills-table .cat {
-      width: 130px;
+      width: 120px;
       font-weight: 700;
       color: var(--primary);
     }
 
     .skills-table .val {
       color: var(--secondary);
-      line-height: 1.4;
+      line-height: 1.34;
     }
 
     /* Bottom 2-Column Split: Education & Certifications */
     .bottom-cols {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 4px;
+      gap: 12px;
+      margin-top: 2px;
     }
 
     .cert-list {
       list-style: none;
-      font-size: 11px;
+      font-size: 10.4px;
       color: var(--secondary);
-      line-height: 1.45;
+      line-height: 1.36;
     }
 
     .cert-list li {
-      margin-bottom: 3px;
+      margin-bottom: 2px;
       display: flex;
       align-items: baseline;
-      gap: 5px;
+      gap: 4px;
     }
 
     .cert-list strong {
@@ -320,32 +313,32 @@
 
     .cert-list .org {
       color: var(--text-muted);
-      font-size: 10px;
+      font-size: 9.5px;
     }
 
     .edu-block {
-      font-size: 11.2px;
+      font-size: 10.6px;
       color: var(--secondary);
     }
 
     .edu-deg {
       font-weight: 700;
       color: var(--primary);
-      font-size: 12.2px;
+      font-size: 11.5px;
     }
 
     .edu-sch {
       font-weight: 600;
       color: var(--secondary);
-      margin: 2px 0;
+      margin: 1px 0;
     }
 
     .edu-meta {
-      font-size: 10.5px;
+      font-size: 9.8px;
       color: var(--text-muted);
       display: flex;
       justify-content: space-between;
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
     .edu-gpa {
@@ -353,17 +346,18 @@
       font-weight: 700;
       color: var(--accent);
       background: #ffe4e6;
-      padding: 1px 6px;
-      border-radius: 4px;
+      padding: 0.5px 5px;
+      border-radius: 3px;
     }
 
-    /* Print Optimizations */
+    /* Strict 1-Page Print Optimizations for both A4 and Mobile Letter */
     @media print {
-      body {
+      html, body {
         background: #fff !important;
         color: #000 !important;
         margin: 0 !important;
         padding: 0 !important;
+        height: 100% !important;
       }
 
       .no-print, .no-print-bar {
@@ -373,15 +367,16 @@
       .resume-wrapper {
         width: 100% !important;
         max-width: 100% !important;
-        min-height: auto !important;
         margin: 0 !important;
         padding: 0 !important;
         box-shadow: none !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
       }
 
       @page {
         size: A4 portrait;
-        margin: 8mm 10mm 8mm 10mm;
+        margin: 6mm 8mm 6mm 8mm;
       }
 
       a {
@@ -397,7 +392,7 @@
   <div class="no-print-bar no-print">
     <div>
       <h1>Niju M &mdash; One-Page Resume</h1>
-      <span class="sub">Fully proportioned to fill <b>1 single A4 page</b> cleanly. Press <b>Ctrl + P</b> &rarr; Save as PDF</span>
+      <span class="sub">Guaranteed <b>1 single page</b> on both Laptop and Mobile. Press <b>Ctrl + P</b> &rarr; Save as PDF</span>
     </div>
     <button class="print-btn" onclick="window.print()">
       <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>
@@ -405,207 +400,205 @@
     </button>
   </div>
 
-  <!-- Single-Page A4 Resume -->
+  <!-- Single-Page Resume Wrapper -->
   <main class="resume-wrapper">
-    <div>
 
-      <!-- Header -->
-      <header>
-        <div class="header-main">
-          <div>
-            <h1 class="candidate-name">NIJU M</h1>
-            <div class="candidate-title">.NET Full Stack Developer | AI-Assisted Software Engineer</div>
-          </div>
+    <!-- Header -->
+    <header>
+      <div class="header-main">
+        <div>
+          <h1 class="candidate-name">NIJU M</h1>
+          <div class="candidate-title">.NET Full Stack Developer | AI-Assisted Software Engineer</div>
         </div>
-
-        <div class="contact-row">
-          <span>📧 <a href="mailto:mniju2004@gmail.com">mniju2004@gmail.com</a></span>
-          <span class="sep">•</span>
-          <span>📞 <a href="tel:+916382441027">+91-6382441027</a></span>
-          <span class="sep">•</span>
-          <span>📍 Sivakasi, Tamil Nadu, India</span>
-          <span class="sep">•</span>
-          <span>🔗 <a href="https://www.linkedin.com/in/niju-mm" target="_blank">linkedin.com/in/niju-mm</a></span>
-          <span class="sep">•</span>
-          <span>💻 <a href="https://github.com/Niju-2004" target="_blank">github.com/Niju-2004</a></span>
-          <span class="sep">•</span>
-          <span>🌐 <a href="https://niju-portfolio-blond.vercel.app" target="_blank">niju-portfolio.vercel.app</a></span>
-        </div>
-      </header>
-
-      <!-- Summary -->
-      <section style="margin-bottom: 10px;">
-        <h2 class="section-title">Professional Summary</h2>
-        <p class="summary-text">
-          Results-oriented <b>.NET Full Stack Developer</b> and <b>Software Engineer at Infosys Limited</b> with enterprise experience designing and engineering robust web applications, high-performance RESTful APIs, and reactive frontends using <b>ASP.NET Core Web API, C#, Angular, Entity Framework Core, SQL Server, and MySQL</b>. Proven track record in layered clean architecture (Controller, Service, Repository, Database), test-driven development, and agile delivery. Actively leveraging modern <b>AI-assisted engineering tools (GitHub Copilot, Claude Code, and Google Agent Development Kit)</b> alongside RAG/vector retrieval systems to accelerate high-quality software delivery.
-        </p>
-      </section>
-
-      <!-- Work Experience -->
-      <section style="margin-bottom: 10px;">
-        <h2 class="section-title">Work Experience</h2>
-
-        <!-- Infosys SE -->
-        <div class="entry">
-          <div class="entry-header">
-            <span class="entry-role">Software Engineer (.NET Full Stack) &mdash; <span class="entry-company">Infosys Limited</span></span>
-            <span class="entry-date">Feb 2026 &ndash; Present | India</span>
-          </div>
-          <ul class="bullet-list">
-            <li>Architect, build, and maintain enterprise web applications utilizing <b>ASP.NET Core Web API, C#, Angular, EF Core, SQL Server</b>, and MySQL following layered clean architecture.</li>
-            <li>Design and deploy high-throughput RESTful Controller APIs, repository layers, and business logic pipelines handling complex transactions, authentication, and data access.</li>
-            <li>Build modular, responsive <b>Angular</b> components using reactive forms, client-side validation, routing, and centralized HTTP interceptor services.</li>
-            <li>Incorporate <b>GitHub Copilot and Claude Code</b> for AI-assisted engineering, improving code velocity, test coverage, debugging accuracy, and legacy code modernization.</li>
-          </ul>
-          <div class="pill-row">
-            <span class="tech-pill">C#</span>
-            <span class="tech-pill">ASP.NET Core</span>
-            <span class="tech-pill">Angular</span>
-            <span class="tech-pill">EF Core</span>
-            <span class="tech-pill">SQL Server</span>
-            <span class="tech-pill">MySQL</span>
-            <span class="tech-pill">REST APIs</span>
-            <span class="tech-pill">Claude Code</span>
-            <span class="tech-pill">GitHub Copilot</span>
-          </div>
-        </div>
-
-        <!-- Infosys Trainee -->
-        <div class="entry" style="margin-top: 7px;">
-          <div class="entry-header">
-            <span class="entry-role">Systems Engineer Trainee &mdash; <span class="entry-company">Infosys Mysore</span></span>
-            <span class="entry-date">Nov 2025 &ndash; Jan 2026 | Mysore, India</span>
-          </div>
-          <ul class="bullet-list">
-            <li>Underwent rigorous enterprise .NET Full Stack development training with top assessments in <b>C#, ASP.NET Core, Angular, SQL Server, OOP Architecture, and EF Core</b>.</li>
-            <li>Delivered end-to-end full-stack sprint projects implementing complete CRUD operations, database migrations, authentication, and integration testing adhering to enterprise quality standards.</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Featured Projects -->
-      <section style="margin-bottom: 10px;">
-        <h2 class="section-title">Featured Projects</h2>
-
-        <!-- EthnoVet -->
-        <div class="entry">
-          <div class="entry-header">
-            <span class="entry-role">EthnoVet Chat &mdash; Multilingual AI Livestock Assistant</span>
-            <span class="proj-links">
-              <a href="https://ethnovet.vercel.app" target="_blank">[Live App ↗]</a>
-              <a href="https://github.com/Niju-2004/Rag-Vector-DB" target="_blank">[GitHub ↗]</a>
-            </span>
-          </div>
-          <ul class="bullet-list">
-            <li>Engineered a full-stack multilingual AI livestock advisory system powered by <b>Retrieval-Augmented Generation (RAG)</b> and <b>FAISS vector database search</b>.</li>
-            <li>Supports bilingual queries (<b>English and Tamil</b>) and animal-specific condition triage (Cattle, Sheep/Goat, Poultry, Dog) using verified ethnoveterinary remedies.</li>
-            <li>Integrated speech recognition (voice-to-text), cloud session management, and responsive dark-mode UI deployed live on Vercel.</li>
-          </ul>
-          <div class="pill-row">
-            <span class="tech-pill">Python</span>
-            <span class="tech-pill">RAG</span>
-            <span class="tech-pill">FAISS</span>
-            <span class="tech-pill">Vector DB</span>
-            <span class="tech-pill">LangChain</span>
-            <span class="tech-pill">Vercel</span>
-          </div>
-        </div>
-
-        <!-- Personal Dashboard -->
-        <div class="entry" style="margin-top: 7px;">
-          <div class="entry-header">
-            <span class="entry-role">Personal Dashboard & Productivity Suite</span>
-            <span class="proj-links">
-              <a href="https://personal-app-tan.vercel.app/login" target="_blank">[Live App ↗]</a>
-              <a href="https://github.com/Niju-2004/PersonalApp" target="_blank">[GitHub ↗]</a>
-            </span>
-          </div>
-          <ul class="bullet-list">
-            <li>Developed an enterprise productivity suite with reactive UI, session authentication, modern glassmorphism design, and state hydration.</li>
-          </ul>
-          <div class="pill-row">
-            <span class="tech-pill">Angular</span>
-            <span class="tech-pill">TypeScript</span>
-            <span class="tech-pill">Tailwind CSS</span>
-            <span class="tech-pill">JWT Auth</span>
-          </div>
-        </div>
-
-        <!-- Daily Bytes & AlconVision -->
-        <div class="entry" style="margin-top: 7px;">
-          <div class="entry-header">
-            <span class="entry-role">Daily Bytes & AlconVision &mdash; Enterprise .NET Platforms</span>
-            <span class="proj-links">
-              <a href="https://github.com/Niju-2004" target="_blank">[GitHub ↗]</a>
-            </span>
-          </div>
-          <ul class="bullet-list">
-            <li>Architected a 4-tier enterprise news portal with <b>ASP.NET Core Web API, C#, MySQL, and Angular</b>; modernized legacy .NET Framework modules to modern <b>ASP.NET Core</b>.</li>
-          </ul>
-          <div class="pill-row">
-            <span class="tech-pill">ASP.NET Core</span>
-            <span class="tech-pill">C#</span>
-            <span class="tech-pill">EF Core</span>
-            <span class="tech-pill">MySQL</span>
-            <span class="tech-pill">Clean Architecture</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Technical Skills -->
-      <section style="margin-bottom: 10px;">
-        <h2 class="section-title">Technical Skills</h2>
-        <table class="skills-table">
-          <tr>
-            <td class="cat">Backend & APIs:</td>
-            <td class="val"><b>C#, .NET 8+, ASP.NET Core Web API, Entity Framework Core</b>, Node.js, Express, RESTful APIs, Clean Architecture, Microservices</td>
-          </tr>
-          <tr>
-            <td class="cat">Frontend:</td>
-            <td class="val"><b>Angular (17/18/19), React, TypeScript</b>, JavaScript, Tailwind CSS, HTML5, CSS3, SCSS</td>
-          </tr>
-          <tr>
-            <td class="cat">Databases:</td>
-            <td class="val"><b>Microsoft SQL Server (T-SQL), PostgreSQL, Prisma ORM, MySQL</b>, FAISS Vector Database</td>
-          </tr>
-          <tr>
-            <td class="cat">AI & Agentic:</td>
-            <td class="val"><b>Google Agent Dev Kit (ADK), LLMs & RAG Architectures</b>, Claude Code, GitHub Copilot, Infosys Topaz Fabric</td>
-          </tr>
-          <tr>
-            <td class="cat">Tools & Platforms:</td>
-            <td class="val">Git, GitHub, Visual Studio, VS Code, Postman, Linux (Red Hat/Bash), Vercel</td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- Bottom Split: Education & Certifications -->
-      <div class="bottom-cols">
-        <!-- Education -->
-        <section>
-          <h2 class="section-title">Education</h2>
-          <div class="edu-block">
-            <div class="edu-deg">B.E. in Computer Science & Engineering</div>
-            <div class="edu-sch">Mepco Schlenk Engineering College</div>
-            <div class="edu-meta">
-              <span>Sivakasi, Tamil Nadu, India</span>
-              <span class="edu-gpa">CGPA: 7.42</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- Certifications -->
-        <section>
-          <h2 class="section-title">Certifications</h2>
-          <ul class="cert-list">
-            <li><span>🏅</span> <strong>Red Hat RHCSA</strong> &mdash; <span class="org">Red Hat Certified System Admin</span></li>
-            <li><span>🏅</span> <strong>Google Cloud ADK Suite</strong> &mdash; <span class="org">Deploy, Eval & Antigravity</span></li>
-            <li><span>🏅</span> <strong>Infosys Topaz Fabric</strong> &mdash; <span class="org">Agent Dev & Guardrails</span></li>
-          </ul>
-        </section>
       </div>
 
+      <div class="contact-row">
+        <span>📧 <a href="mailto:mniju2004@gmail.com">mniju2004@gmail.com</a></span>
+        <span class="sep">•</span>
+        <span>📞 <a href="tel:+916382441027">+91-6382441027</a></span>
+        <span class="sep">•</span>
+        <span>📍 Sivakasi, Tamil Nadu, India</span>
+        <span class="sep">•</span>
+        <span>🔗 <a href="https://www.linkedin.com/in/niju-mm" target="_blank">linkedin.com/in/niju-mm</a></span>
+        <span class="sep">•</span>
+        <span>💻 <a href="https://github.com/Niju-2004" target="_blank">github.com/Niju-2004</a></span>
+        <span class="sep">•</span>
+        <span>🌐 <a href="https://niju-portfolio-blond.vercel.app" target="_blank">niju-portfolio.vercel.app</a></span>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section style="margin-bottom: 7px;">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Results-oriented <b>.NET Full Stack Developer</b> and <b>Software Engineer at Infosys Limited</b> with enterprise experience designing and engineering scalable web applications, high-throughput REST APIs, and reactive frontends using <b>ASP.NET Core Web API, C#, Angular, Entity Framework Core, SQL Server, and MySQL</b>. Proven track record in layered clean architecture (Controller, Service, Repository, Database) and agile delivery. Actively leveraging modern <b>AI-assisted engineering tools (GitHub Copilot, Claude Code, and Google Agent Development Kit)</b> alongside RAG/vector retrieval pipelines to accelerate high-quality software delivery.
+      </p>
+    </section>
+
+    <!-- Work Experience -->
+    <section style="margin-bottom: 7px;">
+      <h2 class="section-title">Work Experience</h2>
+
+      <!-- Infosys SE -->
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-role">Software Engineer (.NET Full Stack) &mdash; <span class="entry-company">Infosys Limited</span></span>
+          <span class="entry-date">Feb 2026 &ndash; Present | India</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Architect, build, and maintain enterprise web applications utilizing <b>ASP.NET Core Web API, C#, Angular, EF Core, SQL Server</b>, and MySQL following layered clean architecture.</li>
+          <li>Design and deploy high-throughput RESTful Controller APIs, repository layers, and business logic pipelines handling complex transactions, authentication, and data access.</li>
+          <li>Build modular, responsive <b>Angular</b> components using reactive forms, client-side validation, routing, and centralized HTTP interceptor services.</li>
+          <li>Incorporate <b>GitHub Copilot and Claude Code</b> for AI-assisted engineering, improving code velocity, test coverage, debugging accuracy, and legacy code modernization.</li>
+        </ul>
+        <div class="pill-row">
+          <span class="tech-pill">C#</span>
+          <span class="tech-pill">ASP.NET Core</span>
+          <span class="tech-pill">Angular</span>
+          <span class="tech-pill">EF Core</span>
+          <span class="tech-pill">SQL Server</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">REST APIs</span>
+          <span class="tech-pill">Claude Code</span>
+          <span class="tech-pill">GitHub Copilot</span>
+        </div>
+      </div>
+
+      <!-- Infosys Trainee -->
+      <div class="entry" style="margin-top: 5px;">
+        <div class="entry-header">
+          <span class="entry-role">Systems Engineer Trainee &mdash; <span class="entry-company">Infosys Mysore</span></span>
+          <span class="entry-date">Nov 2025 &ndash; Jan 2026 | Mysore, India</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Underwent rigorous enterprise .NET Full Stack development training with top assessments in <b>C#, ASP.NET Core, Angular, SQL Server, OOP Architecture, and EF Core</b>.</li>
+          <li>Delivered end-to-end full-stack sprint projects implementing complete CRUD operations, database migrations, authentication, and integration testing adhering to enterprise quality standards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section style="margin-bottom: 7px;">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <!-- EthnoVet -->
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-role">EthnoVet Chat &mdash; Multilingual AI Livestock Assistant</span>
+          <span class="proj-links">
+            <a href="https://ethnovet.vercel.app" target="_blank">[Live App ↗]</a>
+            <a href="https://github.com/Niju-2004/Rag-Vector-DB" target="_blank">[GitHub ↗]</a>
+          </span>
+        </div>
+        <ul class="bullet-list">
+          <li>Engineered a full-stack multilingual AI livestock advisory system powered by <b>Retrieval-Augmented Generation (RAG)</b> and <b>FAISS vector database search</b>.</li>
+          <li>Supports bilingual queries (<b>English and Tamil</b>) and animal-specific condition triage (Cattle, Sheep/Goat, Poultry, Dog) using verified ethnoveterinary remedies.</li>
+          <li>Integrated speech recognition (voice-to-text), cloud session management, and responsive dark-mode UI deployed live on Vercel.</li>
+        </ul>
+        <div class="pill-row">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">RAG</span>
+          <span class="tech-pill">FAISS</span>
+          <span class="tech-pill">Vector DB</span>
+          <span class="tech-pill">LangChain</span>
+          <span class="tech-pill">Vercel</span>
+        </div>
+      </div>
+
+      <!-- Personal Dashboard -->
+      <div class="entry" style="margin-top: 5px;">
+        <div class="entry-header">
+          <span class="entry-role">Personal Dashboard & Productivity Suite</span>
+          <span class="proj-links">
+            <a href="https://personal-app-tan.vercel.app/login" target="_blank">[Live App ↗]</a>
+            <a href="https://github.com/Niju-2004/PersonalApp" target="_blank">[GitHub ↗]</a>
+          </span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed an enterprise productivity suite with reactive UI, session authentication, modern glassmorphism design, and state hydration.</li>
+        </ul>
+        <div class="pill-row">
+          <span class="tech-pill">Angular</span>
+          <span class="tech-pill">TypeScript</span>
+          <span class="tech-pill">Tailwind CSS</span>
+          <span class="tech-pill">JWT Auth</span>
+        </div>
+      </div>
+
+      <!-- Daily Bytes & AlconVision -->
+      <div class="entry" style="margin-top: 5px;">
+        <div class="entry-header">
+          <span class="entry-role">Daily Bytes & AlconVision &mdash; Enterprise .NET Platforms</span>
+          <span class="proj-links">
+            <a href="https://github.com/Niju-2004" target="_blank">[GitHub ↗]</a>
+          </span>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected a 4-tier enterprise news portal with <b>ASP.NET Core Web API, C#, MySQL, and Angular</b>; modernized legacy .NET Framework modules to modern <b>ASP.NET Core</b>.</li>
+        </ul>
+        <div class="pill-row">
+          <span class="tech-pill">ASP.NET Core</span>
+          <span class="tech-pill">C#</span>
+          <span class="tech-pill">EF Core</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">Clean Architecture</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section style="margin-bottom: 7px;">
+      <h2 class="section-title">Technical Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="cat">Backend & APIs:</td>
+          <td class="val"><b>C#, .NET 8+, ASP.NET Core Web API, Entity Framework Core</b>, Node.js, Express, RESTful APIs, Clean Architecture, Microservices</td>
+        </tr>
+        <tr>
+          <td class="cat">Frontend:</td>
+          <td class="val"><b>Angular (17/18/19), React, TypeScript</b>, JavaScript, Tailwind CSS, HTML5, CSS3, SCSS</td>
+        </tr>
+        <tr>
+          <td class="cat">Databases:</td>
+          <td class="val"><b>Microsoft SQL Server (T-SQL), PostgreSQL, Prisma ORM, MySQL</b>, FAISS Vector Database</td>
+        </tr>
+        <tr>
+          <td class="cat">AI & Agentic:</td>
+          <td class="val"><b>Google Agent Dev Kit (ADK), LLMs & RAG Architectures</b>, Claude Code, GitHub Copilot, Infosys Topaz Fabric</td>
+        </tr>
+        <tr>
+          <td class="cat">Tools & Platforms:</td>
+          <td class="val">Git, GitHub, Visual Studio, VS Code, Postman, Linux (Red Hat/Bash), Vercel</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Bottom Split: Education & Certifications -->
+    <div class="bottom-cols">
+      <!-- Education -->
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="edu-block">
+          <div class="edu-deg">B.E. in Computer Science & Engineering</div>
+          <div class="edu-sch">Mepco Schlenk Engineering College</div>
+          <div class="edu-meta">
+            <span>Sivakasi, Tamil Nadu, India</span>
+            <span class="edu-gpa">CGPA: 7.42</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section>
+        <h2 class="section-title">Certifications</h2>
+        <ul class="cert-list">
+          <li><span>🏅</span> <strong>Red Hat RHCSA</strong> &mdash; <span class="org">Red Hat Certified System Admin</span></li>
+          <li><span>🏅</span> <strong>Google Cloud ADK Suite</strong> &mdash; <span class="org">Deploy, Eval & Antigravity</span></li>
+          <li><span>🏅</span> <strong>Infosys Topaz Fabric</strong> &mdash; <span class="org">Agent Dev & Guardrails</span></li>
+        </ul>
+      </section>
     </div>
+
   </main>
 
 </body>
