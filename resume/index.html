@@ -288,14 +288,14 @@
     /* Bottom 2-Column Split: Education & Certifications */
     .bottom-cols {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 14px;
       margin-top: 2px;
     }
 
     .cert-list {
       list-style: none;
-      font-size: 10.4px;
+      font-size: 10.2px;
       color: var(--secondary);
       line-height: 1.36;
     }
@@ -305,10 +305,12 @@
       display: flex;
       align-items: baseline;
       gap: 4px;
+      white-space: nowrap;
     }
 
     .cert-list strong {
       color: var(--primary);
+      white-space: nowrap;
     }
 
     .cert-list .org {
@@ -592,7 +594,7 @@
       <section>
         <h2 class="section-title">Certifications</h2>
         <ul class="cert-list">
-          <li><span>🏅</span> <strong>Microsoft AZ-900</strong> &mdash; <span class="org">Azure Fundamentals (Score: 968/1000 &bull; ID: E64466354EF5F5FD)</span></li>
+          <li><span>🏅</span> <strong>Microsoft AZ-900</strong> &mdash; <span class="org">Azure Fundamentals (Score: 968/1000)</span></li>
           <li><span>🏅</span> <strong>Red Hat RHCSA</strong> &mdash; <span class="org">Red Hat Certified System Admin</span></li>
           <li><span>🏅</span> <strong>Google Cloud ADK Suite</strong> &mdash; <span class="org">Deploy, Eval & Antigravity</span></li>
           <li><span>🏅</span> <strong>Infosys Topaz Fabric</strong> &mdash; <span class="org">Agent Dev & Guardrails</span></li>
