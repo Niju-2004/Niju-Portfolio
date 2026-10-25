@@ -9,7 +9,7 @@ export const PORTFOLIO_INFO = {
   location: "Sivakasi, Tamil Nadu, India",
   email: "mniju2004@gmail.com",
   phone: "+91-6382441027",
-  linkedin: "https://www.linkedin.com/in/niju-mm",
+  linkedin: "https://www.linkedin.com/in/m-niju",
   github: "https://github.com/Niju-2004",
   stats: {
     yearsExperience: "1+",

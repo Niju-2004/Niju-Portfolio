@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowUp, Sparkles } from 'lucide-react';
 import { api } from '../services/api';
 import { HealthStatus } from '../types';
+import { STATIC_PROFILE } from '../data/staticFallback';
 
 export const Footer: React.FC = () => {
   const [health, setHealth] = useState<HealthStatus | null>(null);
@@ -74,7 +75,7 @@ export const Footer: React.FC = () => {
               GitHub
             </a>
             <span>•</span>
-            <a href="https://www.linkedin.com/in/niju-mm" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+            <a href={STATIC_PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
               LinkedIn
             </a>
           </div>
