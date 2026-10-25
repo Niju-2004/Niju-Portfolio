@@ -39,6 +39,8 @@ export interface Certification {
   issuer: string;
   issueDate?: string | null;
   credentialUrl?: string | null;
+  credentialId?: string | null;
+  certificateImage?: string | null;
   displayOrder: number;
 }
 

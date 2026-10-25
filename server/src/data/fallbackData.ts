@@ -187,18 +187,27 @@ export const SKILLS_DATA = [
   { id: 18, category: "AI Technologies", name: "Infosys Topaz Fabric", level: 85, featured: true, displayOrder: 18 },
 
   // Tools & DevOps
-  { id: 19, category: "Tools", name: "Git & GitHub Workflow", level: 92, featured: true, displayOrder: 19 },
-  { id: 20, category: "Tools", name: "Visual Studio & VS Code", level: 95, featured: true, displayOrder: 20 },
-  { id: 21, category: "Tools", name: "Postman & REST Testing", level: 90, featured: false, displayOrder: 21 },
-  { id: 22, category: "Tools", name: "Red Hat Linux / Bash", level: 82, featured: false, displayOrder: 22 }
+  { id: 19, category: "Tools", name: "Microsoft Azure (AZ-900)", level: 92, featured: true, displayOrder: 19 },
+  { id: 20, category: "Tools", name: "Git & GitHub Workflow", level: 92, featured: true, displayOrder: 20 },
+  { id: 21, category: "Tools", name: "Visual Studio & VS Code", level: 95, featured: true, displayOrder: 21 },
+  { id: 22, category: "Tools", name: "Postman & REST Testing", level: 90, featured: false, displayOrder: 22 },
+  { id: 23, category: "Tools", name: "Red Hat Linux / Bash", level: 82, featured: false, displayOrder: 23 }
 ];
 
 export const CERTIFICATIONS_DATA = [
-  { id: 1, name: "Red Hat Certified System Administrator (RHCSA)", issuer: "Red Hat", issueDate: "Certified", credentialUrl: null, displayOrder: 1 },
-  { id: 2, name: "Google Cloud — Accelerate Development with Antigravity", issuer: "Google Cloud", issueDate: "Certified", credentialUrl: null, displayOrder: 2 },
-  { id: 3, name: "Google Cloud — Deploy an Agent with ADK", issuer: "Google Cloud", issueDate: "Certified", credentialUrl: null, displayOrder: 3 },
-  { id: 4, name: "Google Cloud — Evaluate & Improve ADK Agents", issuer: "Google Cloud", issueDate: "Certified", credentialUrl: null, displayOrder: 4 },
-  { id: 5, name: "Infosys Topaz Fabric — Agent Development & Guardrails", issuer: "Infosys", issueDate: "Professional Training", credentialUrl: null, displayOrder: 5 }
+  {
+    id: 1,
+    name: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    issuer: "Microsoft",
+    issueDate: "October 2026 • Score: 968/1000",
+    credentialUrl: "https://learn.microsoft.com/users/nijum-0297/credentials/E64466354EF5F5FD",
+    displayOrder: 1
+  },
+  { id: 2, name: "Red Hat Certified System Administrator (RHCSA)", issuer: "Red Hat", issueDate: "Certified", credentialUrl: null, displayOrder: 2 },
+  { id: 3, name: "Google Cloud — Accelerate Development with Antigravity", issuer: "Google Cloud", issueDate: "Certified", credentialUrl: null, displayOrder: 3 },
+  { id: 4, name: "Google Cloud — Deploy an Agent with ADK", issuer: "Google Cloud", issueDate: "Certified", credentialUrl: null, displayOrder: 4 },
+  { id: 5, name: "Google Cloud — Evaluate & Improve ADK Agents", issuer: "Google Cloud", issueDate: "Certified", credentialUrl: null, displayOrder: 5 },
+  { id: 6, name: "Infosys Topaz Fabric — Agent Development & Guardrails", issuer: "Infosys", issueDate: "Professional Training", credentialUrl: null, displayOrder: 6 }
 ];
 
 export const INITIAL_GUESTBOOK_DATA = [

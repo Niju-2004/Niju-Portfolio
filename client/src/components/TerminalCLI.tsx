@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Terminal as TerminalIcon, X, CornerDownLeft } from 'lucide-react';
 import { api } from '../services/api';
-import { STATIC_PROFILE, STATIC_PROJECTS, STATIC_SKILLS, STATIC_EXPERIENCE } from '../data/staticFallback';
+import { STATIC_PROFILE, STATIC_PROJECTS, STATIC_SKILLS, STATIC_EXPERIENCE, STATIC_CERTIFICATIONS } from '../data/staticFallback';
 
 interface TerminalCLIProps {
   isOpen: boolean;
@@ -86,6 +86,7 @@ export const TerminalCLI: React.FC<TerminalCLIProps> = ({ isOpen, onClose }) => 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-slate-300">
             <div><b className="text-white">skills</b> — List technical skills & levels</div>
             <div><b className="text-white">projects</b> — List all portfolio projects</div>
+            <div><b className="text-white">certs</b> — View official certifications (AZ-900, RHCSA)</div>
             <div><b className="text-white">experience</b> — Show career at Infosys</div>
             <div><b className="text-white">contact</b> — Display email, phone & social</div>
             <div><b className="text-white">curl /api/health</b> — Query live backend telemetry</div>
@@ -119,6 +120,30 @@ export const TerminalCLI: React.FC<TerminalCLIProps> = ({ isOpen, onClose }) => 
               <div className="text-white font-semibold">{i + 1}. {p.title}</div>
               <div className="text-slate-400 text-[11px]">{p.description}</div>
               <div className="text-brand-violet font-mono text-[10px]">Tags: {p.tags.join(', ')}</div>
+            </div>
+          ))}
+        </div>
+      );
+    } else if (raw === 'certs' || raw === 'certifications') {
+      output = (
+        <div className="space-y-2 text-xs">
+          <div className="text-brand-pink font-bold">Official Certifications & Credentials:</div>
+          {STATIC_CERTIFICATIONS.map((c) => (
+            <div key={c.id} className="border-l-2 border-brand-violet pl-2 space-y-0.5">
+              <div className="text-white font-semibold flex items-center gap-2">
+                <span>{c.name}</span>
+                {c.credentialId && (
+                  <span className="text-[10px] px-1.5 py-0.2 rounded bg-brand-rose/20 text-brand-pink font-mono">
+                    ID: {c.credentialId}
+                  </span>
+                )}
+              </div>
+              <div className="text-slate-400 text-[10px]">{c.issuer} • {c.issueDate}</div>
+              {c.credentialUrl && (
+                <div className="text-[10px] text-brand-pink underline truncate">
+                  <a href={c.credentialUrl} target="_blank" rel="noopener noreferrer">{c.credentialUrl}</a>
+                </div>
+              )}
             </div>
           ))}
         </div>
