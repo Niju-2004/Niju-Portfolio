@@ -43,7 +43,8 @@ async function main() {
   }
   console.log(`✅ Seeded ${PROJECTS_DATA.length} projects`);
 
-  // 2. Seed Skills
+  // 2. Seed Skills (clear existing to prevent duplication)
+  await prisma.skill.deleteMany({});
   for (const skill of SKILLS_DATA) {
     await prisma.skill.create({
       data: {
@@ -57,7 +58,8 @@ async function main() {
   }
   console.log(`✅ Seeded ${SKILLS_DATA.length} skills`);
 
-  // 3. Seed Experience
+  // 3. Seed Experience (clear existing to prevent duplication)
+  await prisma.experience.deleteMany({});
   for (const exp of EXPERIENCE_DATA) {
     await prisma.experience.create({
       data: {
@@ -74,7 +76,8 @@ async function main() {
   }
   console.log(`✅ Seeded ${EXPERIENCE_DATA.length} experiences`);
 
-  // 4. Seed Certifications
+  // 4. Seed Certifications (clear existing to prevent duplication)
+  await prisma.certification.deleteMany({});
   for (const cert of CERTIFICATIONS_DATA) {
     await prisma.certification.create({
       data: {
@@ -88,17 +91,22 @@ async function main() {
   }
   console.log(`✅ Seeded ${CERTIFICATIONS_DATA.length} certifications`);
 
-  // 5. Seed Initial Guestbook
-  for (const gb of INITIAL_GUESTBOOK_DATA) {
-    await prisma.guestbookEntry.create({
-      data: {
-        name: gb.name,
-        message: gb.message,
-        badge: gb.badge
-      }
-    });
+  // 5. Seed Initial Guestbook (only if empty)
+  const existingGb = await prisma.guestbookEntry.count();
+  if (existingGb === 0) {
+    for (const gb of INITIAL_GUESTBOOK_DATA) {
+      await prisma.guestbookEntry.create({
+        data: {
+          name: gb.name,
+          message: gb.message,
+          badge: gb.badge
+        }
+      });
+    }
+    console.log(`✅ Seeded guestbook entries`);
+  } else {
+    console.log(`ℹ️ Skipped guestbook seeding (already has ${existingGb} entries)`);
   }
-  console.log(`✅ Seeded guestbook entries`);
 
   console.log('🎉 Seeding completed successfully!');
 }

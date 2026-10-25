@@ -11,6 +11,10 @@ export const Experience: React.FC = () => {
     api.getExperience().then(setExperiences);
   }, []);
 
+  const uniqueExperiences = Array.from(
+    new Map(experiences.map((e) => [`${e.role}-${e.company}`.toLowerCase().trim(), e])).values()
+  );
+
   return (
     <section id="experience" className="py-20 relative bg-black/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +29,7 @@ export const Experience: React.FC = () => {
         </div>
 
         <div className="mt-10 relative pl-4 sm:pl-8 border-l border-white/10 space-y-10">
-          {experiences.map((exp) => (
+          {uniqueExperiences.map((exp) => (
             <div key={exp.id} className="relative group">
               {/* Timeline Indicator Dot */}
               <div className="absolute -left-[21px] sm:-left-[37px] top-1.5 w-4 h-4 rounded-full bg-brand-rose border-4 border-[#08080d] group-hover:scale-125 transition-transform shadow-md shadow-brand-rose/50" />

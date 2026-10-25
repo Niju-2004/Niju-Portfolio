@@ -21,9 +21,13 @@ export const Skills: React.FC = () => {
     { name: 'Tools', icon: Wrench },
   ];
 
+  const uniqueSkills = Array.from(
+    new Map(skills.map((s) => [s.name.toLowerCase().trim(), s])).values()
+  );
+
   const filteredSkills = activeCategory === 'All'
-    ? skills
-    : skills.filter((s) => s.category.toLowerCase() === activeCategory.toLowerCase());
+    ? uniqueSkills
+    : uniqueSkills.filter((s) => s.category.toLowerCase() === activeCategory.toLowerCase());
 
   return (
     <section id="skills" className="py-20 relative">
