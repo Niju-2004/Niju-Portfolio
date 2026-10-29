@@ -207,7 +207,6 @@ export const STATIC_CERTIFICATIONS: Certification[] = [
 ];
 
 export const STATIC_GUESTBOOK: GuestbookEntry[] = [
-  { id: 1, name: "Antigravity AI", message: "Excited to pair-program and architect this modern full-stack portfolio with you, Niju!", badge: "AI Assistant", createdAt: new Date().toISOString() },
-  { id: 2, name: "Technical Recruiter", message: "Impressive full-stack expertise with both .NET enterprise systems and modern React/AI integrations.", badge: "Recruiter", createdAt: new Date(Date.now() - 86400000).toISOString() }
+  { id: 1, name: "Technical Recruiter", message: "Impressive full-stack expertise with both .NET enterprise systems and modern React/AI integrations.", badge: "Recruiter", createdAt: new Date(Date.now() - 86400000).toISOString() }
 ];
 

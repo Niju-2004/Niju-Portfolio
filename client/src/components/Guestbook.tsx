@@ -57,6 +57,15 @@ export const Guestbook: React.FC = () => {
 
   const badgeOptions = ['Visitor', 'Recruiter', 'Software Engineer', 'Fellow Colleague'];
 
+  // Filter out any AI mock entries and deduplicate
+  const displayedEntries = Array.from(
+    new Map(
+      entries
+        .filter((e) => !e.name.toLowerCase().includes('antigravity'))
+        .map((e) => [`${e.name}-${e.message}`.toLowerCase().trim(), e])
+    ).values()
+  );
+
   return (
     <section id="guestbook" className="py-20 relative bg-black/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -159,32 +168,38 @@ export const Guestbook: React.FC = () => {
 
           {/* Entries Feed */}
           <div className="lg:col-span-7 space-y-3.5 max-h-[520px] overflow-y-auto pr-1">
-            {entries.map((entry) => (
-              <div
-                key={entry.id}
-                className="glass-panel p-4 sm:p-5 rounded-xl border border-white/10 flex flex-col justify-between glass-panel-hover"
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-brand-rose/30 to-brand-violet/30 border border-white/10 flex items-center justify-center text-xs font-bold text-white">
-                      {entry.name.charAt(0).toUpperCase()}
+            {displayedEntries.length === 0 ? (
+              <div className="glass-panel p-8 rounded-xl border border-white/10 text-center text-slate-400 text-sm">
+                Be the first to leave a message in the guestbook!
+              </div>
+            ) : (
+              displayedEntries.map((entry) => (
+                <div
+                  key={entry.id}
+                  className="glass-panel p-4 sm:p-5 rounded-xl border border-white/10 flex flex-col justify-between glass-panel-hover"
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-brand-rose/30 to-brand-violet/30 border border-white/10 flex items-center justify-center text-xs font-bold text-white">
+                        {entry.name.charAt(0).toUpperCase()}
+                      </div>
+                      <span className="font-semibold text-sm text-white">{entry.name}</span>
+                      <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-brand-pink border border-white/5">
+                        {entry.badge}
+                      </span>
                     </div>
-                    <span className="font-semibold text-sm text-white">{entry.name}</span>
-                    <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-brand-pink border border-white/5">
-                      {entry.badge}
+
+                    <span className="text-[11px] font-mono text-slate-500">
+                      {new Date(entry.createdAt).toLocaleDateString()}
                     </span>
                   </div>
 
-                  <span className="text-[11px] font-mono text-slate-500">
-                    {new Date(entry.createdAt).toLocaleDateString()}
-                  </span>
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-9">
+                    "{entry.message}"
+                  </p>
                 </div>
-
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-9">
-                  "{entry.message}"
-                </p>
-              </div>
-            ))}
+              ))
+            )}
           </div>
         </div>
       </div>

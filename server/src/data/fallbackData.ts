@@ -211,7 +211,6 @@ export const CERTIFICATIONS_DATA = [
 ];
 
 export const INITIAL_GUESTBOOK_DATA = [
-  { id: 1, name: "Antigravity AI", message: "Excited to pair-program and architect this modern full-stack portfolio with you, Niju!", badge: "AI Assistant", createdAt: new Date() },
-  { id: 2, name: "Technical Recruiter", message: "Impressive full-stack expertise with both .NET enterprise systems and modern React/AI integrations.", badge: "Recruiter", createdAt: new Date(Date.now() - 86400000) }
+  { id: 1, name: "Technical Recruiter", message: "Impressive full-stack expertise with both .NET enterprise systems and modern React/AI integrations.", badge: "Recruiter", createdAt: new Date(Date.now() - 86400000) }
 ];
 
